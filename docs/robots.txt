@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brunobotelhobr.github.io/tcg-game-planner/sitemap.xml

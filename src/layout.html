@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0C0E14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F7F8FB" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TCG Game Planner">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{base_url}}assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+{{smart_banner}}<link rel="icon" type="image/png" href="{{root}}assets/img/favicon.png">
+<link rel="apple-touch-icon" href="{{root}}assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="{{root}}assets/site.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{root}}"><img src="{{root}}assets/img/app-icon.png" alt="" width="28" height="28">TCG Game Planner</a>
+    <nav class="site-nav" aria-label="Main">{{nav}}</nav>
+  </div>
+</header>
+<main id="content">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="{{root}}"><img src="{{root}}assets/img/app-icon.png" alt="" width="28" height="28">TCG Game Planner</a>
+        <p>Decks, sideboard plans, tournaments and your collection, for Magic: The Gathering players. Free, not open source.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="{{root}}#features">Features</a></li>
+          <li><a href="{{root}}releases/">Release notes</a></li>
+          <li><a href="{{root}}backlog/">Backlog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="{{root}}help/">User guide</a></li>
+          <li><a href="{{root}}faq/">FAQ</a></li>
+          <li><a href="{{root}}support/">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="{{root}}privacy/">Privacy Policy</a></li>
+          <li><a href="{{root}}terms/">Terms of Use</a></li>
+          <li><a href="{{root}}legal/">Credits and legal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="notice">
+      <p>TCG Game Planner is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+      <p>Card data, images and prices from <a href="https://scryfall.com">Scryfall</a>, which is not affiliated with this app. © {{year}} Bruno Botelho.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

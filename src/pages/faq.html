@@ -1,0 +1,230 @@
+<!--
+title: FAQ
+description: Answers about TCG Game Planner: price and rulings sources, the collection, decks and reservations, tournaments, backups, privacy and troubleshooting.
+path: faq/
+nav: faq
+-->
+<div class="wrap prose">
+  <header class="page-head">
+    <span class="eyebrow">FAQ</span>
+    <h1>Frequently asked questions</h1>
+    <p class="lead">Short answers, with links to the <a href="{{root}}help/">user guide</a> for the details. Not here? <a href="{{root}}support/">Ask us</a>.</p>
+  </header>
+
+  <section class="faq-group" id="about">
+    <h2>About the app</h2>
+    <details id="free"><summary>Is it free?</summary><div>
+      <p>Yes. No price, no ads, no in-app purchases, no subscription, no account.</p>
+    </div></details>
+    <details id="open-source"><summary>Is it open source?</summary><div>
+      <p>No. The app is free, but its code is not public. The <a href="{{repo}}">GitHub repository</a> holds this website and the issue tracker only.</p>
+    </div></details>
+    <details id="devices"><summary>Which devices does it run on?</summary><div>
+      <p>iPhone and iPad with iOS or iPadOS 17 or later, and Mac with macOS 14 Sonoma or later. One download from the App Store covers all three.</p>
+    </div></details>
+    <details id="android"><summary>Is there an Android, Windows or web version?</summary><div>
+      <p>Not yet. Android and Windows versions are on the <a href="{{root}}backlog/">backlog</a>, without a date. There is no web version planned.</p>
+    </div></details>
+    <details id="games"><summary>Does it support games other than Magic: The Gathering?</summary><div>
+      <p>No. Card search, prices and rules come from Scryfall, which covers Magic only.</p>
+    </div></details>
+    <details id="official"><summary>Is this an official Wizards of the Coast app?</summary><div>
+      <p>No. It is unofficial Fan Content, not approved or endorsed by Wizards of the Coast, and not affiliated with Scryfall.</p>
+    </div></details>
+    <details id="offline"><summary>Do I need an internet connection?</summary><div>
+      <p>Only to look up cards the app has not seen, to download card images and to refresh prices and banlists. Everything you have entered works offline.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="start">
+    <h2>Getting started</h2>
+    <details id="sample"><summary>What is the data that is already in the app?</summary><div>
+      <p>Samples, so every screen has something to show: a few formats and archetypes, an example deck with sideboard plans, a tournament and a small collection. Edit or delete them as you like.</p>
+    </div></details>
+    <details id="import"><summary>Can I import my decks or collection from another app or site?</summary><div>
+      <p>Decks, yes: in a deck, <strong>Import List</strong> takes a pasted list with one card per line, such as <code>4 Lightning Bolt</code>. There is no collection import from other sites; add cards in the app, or restore a backup from another of your devices.</p>
+    </div></details>
+    <details id="portuguese"><summary>Can I search cards by their Portuguese name?</summary><div>
+      <p>Yes. The card is found and saved under its official English name.</p>
+    </div></details>
+    <details id="language"><summary>How do I change the app's language?</summary><div>
+      <p>Settings › Language: System, English or Português (Brasil).</p>
+    </div></details>
+    <details id="settings"><summary>Where is Settings on iPhone?</summary><div>
+      <p>Tap your profile picture, or your initials, at the top left of any tab.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="data">
+    <h2>Card data and prices</h2>
+    <details id="data-source"><summary>Where does the card data come from?</summary><div>
+      <p>From <a href="https://scryfall.com">Scryfall</a>: names, mana costs, types and text, editions, images, rulings and legality. Scryfall is not affiliated with the app.</p>
+    </div></details>
+    <details id="prices"><summary>Where do the prices come from, and in what currency?</summary><div>
+      <p>From Scryfall, in US dollars. Scryfall's dollar prices are market prices from TCGplayer, a US store, so they reflect the US market rather than prices in your country. The store links on every card (LigaMagic, CardTrader, Card Kingdom, StarCityGames) show what local stores charge.</p>
+    </div></details>
+    <details id="price-updates"><summary>How often are prices updated?</summary><div>
+      <p>Scryfall refreshes its prices about once a day. The app downloads them when you tap Update, and on its own once a day when you open it.</p>
+    </div></details>
+    <details id="approximate"><summary>What does "~$" in front of a price mean?</summary><div>
+      <p>It is an estimate. There is no price for that exact finish (often a foil, or a printing with no market data), so the app shows the closest price it has.</p>
+    </div></details>
+    <details id="no-price"><summary>Why does a card have no price?</summary><div>
+      <p>Scryfall has no dollar price for that printing, which is common for old foreign editions, promos and some special products. It counts as zero in totals.</p>
+    </div></details>
+    <details id="rulings"><summary>Where do the rulings come from?</summary><div>
+      <p>From Scryfall, which publishes the official rulings from Wizards of the Coast together with its own notes.</p>
+    </div></details>
+    <details id="banlists"><summary>How are banlists and legality kept current?</summary><div>
+      <p>Every Update reads them from Scryfall. If a card was just banned or unbanned, run Update.</p>
+    </div></details>
+    <details id="images"><summary>Where do the card images come from? Why are some missing?</summary><div>
+      <p>From Scryfall. Images download the first time they are needed and during Update, then stay on your device. A missing image usually means the device was offline; Update fetches what is missing.</p>
+    </div></details>
+    <details id="tiers"><summary>Where do the metagame tiers come from?</summary><div>
+      <p>The tiers that come with the app are a starting point, not live data. Formats, archetypes and tiers are yours to change.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="collection">
+    <h2>Collection</h2>
+    <details id="lists"><summary>What is the difference between Collection, On the Way, Want and Archive?</summary><div>
+      <ul>
+        <li><strong>Collection</strong>: copies in hand, and proxies.</li>
+        <li><strong>On the Way</strong>: copies you bought that have not arrived.</li>
+        <li><strong>Want</strong>: copies you are looking for, plus what your decks still need.</li>
+        <li><strong>Archive</strong>: copies you own but keep out of play. Decks never take them.</li>
+      </ul>
+    </div></details>
+    <details id="proxy"><summary>How do proxies work?</summary><div>
+      <p>A proxy fills a deck slot when no real copy is free, so the deck can be complete while you look for the card. The app counts proxies separately from real copies.</p>
+    </div></details>
+    <details id="stacks"><summary>Why does the same card appear on several rows?</summary><div>
+      <p>Each edition, finish, condition and language is its own row. Four Revised and four Fourth Edition copies are different things to own, worth different money.</p>
+    </div></details>
+    <details id="value"><summary>How is the collection's value calculated?</summary><div>
+      <p>The overview totals the list in US dollars, at the price of each row's own edition and finish.</p>
+    </div></details>
+    <details id="extras"><summary>Can I record foil, signed, altered or graded cards?</summary><div>
+      <p>Foil or non-foil, condition (M, NM, SP, MP, HP, D), language, signed and altered, with your own photo of the card. Graded cards (PSA, BGS) are not supported.</p>
+    </div></details>
+    <details id="export"><summary>How do I export my collection?</summary><div>
+      <p>Use the share button on any list's overview card: <strong>Copy List</strong> or <strong>Share List</strong> for text such as <code>4x Lightning Bolt (LEA)</code>, or <strong>Export CSV</strong> for a spreadsheet with every field the app stores. Both follow your search and filters.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="decks">
+    <h2>Decks and sideboards</h2>
+    <details id="missing"><summary>What does "missing" mean on a deck?</summary><div>
+      <p>The deck needs more copies than you have free. Copies another deck is holding do not count as free.</p>
+    </div></details>
+    <details id="reserved"><summary>What do "In Decks" and reservations mean?</summary><div>
+      <p>A deck reserves specific copies from your collection, so two decks never count on the same card. Archive or delete a deck to release what it holds.</p>
+    </div></details>
+    <details id="share-copy"><summary>Can two decks share the same copy?</summary><div>
+      <p>No, on purpose: the app shows what you would have to move from one deck to another. Add copies, or use proxies.</p>
+    </div></details>
+    <details id="maybeboard"><summary>Does the maybeboard count?</summary><div>
+      <p>Maybeboard cards reserve copies, so you can build around what you own, but they never count toward the deck's size, price or completeness.</p>
+    </div></details>
+    <details id="plans"><summary>How do I plan my sideboarding?</summary><div>
+      <p>Open the deck, then Sideboard Plans. Choose an archetype and set what comes in and goes out on the play and on the draw. The Sideboard Matrix shows every plan at once. <a href="{{root}}help/#sideboard">More in the guide</a>.</p>
+    </div></details>
+    <details id="print-guide"><summary>Can I print or share my sideboard guide?</summary><div>
+      <p>Yes: a PDF guide from the plans list, and a spreadsheet (.xlsx) from the matrix.</p>
+    </div></details>
+    <details id="deck-history"><summary>Can I go back to an earlier version of a deck?</summary><div>
+      <p>Yes, if you saved a snapshot of it: Snapshots, in the deck's menu.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="events">
+    <h2>Tournaments and analytics</h2>
+    <details id="placement"><summary>Why does my report show "Best Win Streak" instead of my placement?</summary><div>
+      <p>Fill in both <strong>Players</strong> and <strong>Final Placement</strong> in Edit Tournament. The report then shows your standing, such as "5th of 18".</p>
+    </div></details>
+    <details id="by-opponent"><summary>Why is an opponent missing from Analytics › By Opponent?</summary><div>
+      <p>Only rounds with the opponent's name filled in count there. Add the name to the round.</p>
+    </div></details>
+    <details id="byes"><summary>How are byes counted?</summary><div>
+      <p>A bye is recorded as a 2-0 win and counts in the tournament's record and win rate. It is left out of the matchup and opponent breakdowns, since there was no opponent.</p>
+    </div></details>
+    <details id="report"><summary>Can I share a tournament report?</summary><div>
+      <p>Yes, as phone-sized images for chats and social media, or as a PDF. You choose which sections it includes.</p>
+    </div></details>
+    <details id="dictation"><summary>Is my dictation sent anywhere?</summary><div>
+      <p>No. Speech is turned into text on your device.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="backups">
+    <h2>Backups and devices</h2>
+    <details id="where"><summary>Where is my data stored?</summary><div>
+      <p>On your device, in the app's own database. There is no server; nothing is stored anywhere else unless you make a backup.</p>
+    </div></details>
+    <details id="sync"><summary>Does it sync between my iPhone, iPad and Mac?</summary><div>
+      <p>Not live. Each device backs up once a day to a folder. Choose the same iCloud Drive folder on every device, and the app offers to restore when it finds a newer backup from another one. Restoring replaces the data on that device.</p>
+    </div></details>
+    <details id="iphone-local"><summary>Why does Settings say "Local folder only" on my iPhone?</summary><div>
+      <p>Until you choose a folder, iPhone backups stay inside the app, on that phone, and are lost with it. Choose an iCloud Drive folder under Settings › Backups › Destination.</p>
+    </div></details>
+    <details id="new-phone"><summary>How do I move to a new phone?</summary><div>
+      <ol>
+        <li>On the old device: Settings › Backups › <strong>Export Backup</strong> (or make sure a recent backup is in your iCloud Drive folder).</li>
+        <li>On the new device: install the app, then Settings › Backups › <strong>Import Backup</strong> and choose the file.</li>
+        <li>Tap Update to download card data and images again.</li>
+      </ol>
+    </div></details>
+    <details id="contents"><summary>What does a backup include?</summary><div>
+      <p>Decks, collection, tournaments, formats and archetypes, sideboard plans, snapshots, the life counter, your profile and the photos attached to cards. It does not include the downloaded card data and images (Update gets them again), preferences such as the language, Beta Feature keys, or files attached in the Assistant.</p>
+    </div></details>
+    <details id="undo"><summary>I deleted something by mistake. Can I get it back?</summary><div>
+      <p>Restore a backup from before the deletion in Settings › Backups. It replaces everything on that device with the backup, so anything added since is lost. For a single deck, a snapshot may be enough.</p>
+    </div></details>
+    <details id="delete-all"><summary>How do I delete all my data?</summary><div>
+      <p>On iPhone and iPad, delete the app. On the Mac, delete the app and the folder <code>~/Library/Application Support/TCGGamePlanner</code>. Then delete the backup files from your backup folder.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="privacy">
+    <h2>Privacy</h2>
+    <details id="collect"><summary>Do you collect any data?</summary><div>
+      <p>No. No analytics, no ads, no tracking, no account. Read the <a href="{{root}}privacy/">Privacy Policy</a>.</p>
+    </div></details>
+    <details id="permissions"><summary>Why does the app ask for the camera, photos, microphone or speech recognition?</summary><div>
+      <p>The camera and photos, to add a photo of an altered or signed card or your profile picture. The microphone and speech recognition, to dictate notes, recognized on your device. Each is asked only when you use that feature, and you can say no.</p>
+    </div></details>
+    <details id="network"><summary>Why does the app connect to the internet?</summary><div>
+      <p>To get card data, images and prices from Scryfall, and to open the store pages you tap. If you turn on a Beta Feature, also to the Google service you set up.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="beta">
+    <h2>Beta Features</h2>
+    <details id="what-beta"><summary>What are Beta Features, and how do I get them?</summary><div>
+      <p>Experimental tools, off for everyone: an AI assistant, AI card digitization from a photo, and a daily sync of your collection's value to Google BigQuery. They need an unlock code and your own Google keys, are not supported, and may change or go away.</p>
+    </div></details>
+    <details id="ai-data"><summary>Is my data sent to an AI?</summary><div>
+      <p>Only if you unlock Beta Features, add your own Gemini key and use the assistant or digitization. Then what you send in that conversation, and the photos you choose, go to Google under your account and Google's terms.</p>
+    </div></details>
+  </section>
+
+  <section class="faq-group" id="trouble">
+    <h2>Troubleshooting</h2>
+    <details id="blank-card"><summary>A card shows no edition, mana cost or image.</summary><div>
+      <p>Run Update. Opening the card or its deck also fetches what is missing.</p>
+    </div></details>
+    <details id="update-failed"><summary>Update failed.</summary><div>
+      <p>Check your connection and try again later; Scryfall may be busy. If it keeps failing, <a href="{{root}}support/">report it</a> with the message shown.</p>
+    </div></details>
+    <details id="backup-missing"><summary>My backup does not appear on my other device.</summary><div>
+      <p>Check that both devices use the same iCloud Drive folder, and that iCloud Drive has finished syncing the file (Files app, or Finder on the Mac).</p>
+    </div></details>
+    <details id="version"><summary>Where do I find my app version?</summary><div>
+      <p>Settings › About.</p>
+    </div></details>
+    <details id="report-bug"><summary>How do I report a bug or ask for a feature?</summary><div>
+      <p>Open a ticket on GitHub from the <a href="{{root}}support/">Support</a> page.</p>
+    </div></details>
+  </section>
+</div>

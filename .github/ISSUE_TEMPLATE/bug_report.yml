@@ -1,0 +1,70 @@
+name: Report a bug
+description: Something does not work, looks wrong or lost data.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not include your e-mail address, backup files, API keys or service-account keys. Crop anything personal out of screenshots.
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options: [iPhone, iPad, Mac]
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and system version
+      placeholder: iPhone 15, iOS 18.1
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings › About.
+      placeholder: "0.1"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: Step by step, so we can do the same.
+      placeholder: |
+        1. Open a deck
+        2. Tap …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include any message the app showed.
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options: [Every time, Sometimes, Once]
+  - type: dropdown
+    id: data-loss
+    attributes:
+      label: Did you lose data?
+      options: ["No", "Yes"]
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or a screen recording
+      description: Drag files here.

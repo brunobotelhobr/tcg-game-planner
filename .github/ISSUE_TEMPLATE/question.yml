@@ -1,0 +1,19 @@
+name: Ask a question
+description: How something works, when the guide and FAQ do not say.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not include your e-mail address, backup files or keys.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: checked
+    attributes:
+      label: What did you already check?
+      description: The FAQ or guide sections you read, what you tried.

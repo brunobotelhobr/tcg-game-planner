@@ -1,43 +1,25 @@
-# TCG Game Planner
+# TCG Game Planner — website and support
 
-> **The ultimate deckbuilder, sideboard strategist, and tournament companion for Magic: The Gathering (MTG) and tabletop trading card games.**
+The public website and issue tracker for **TCG Game Planner**, a free app for Magic: The Gathering players on iPhone, iPad and Mac. The app is free but not open source: this repository holds the website only.
 
-Available natively on **iPhone**, **iPad**, and **Mac**.
+- Website: https://brunobotelhobr.github.io/tcg-game-planner/
+- Get help or report a bug: https://brunobotelhobr.github.io/tcg-game-planner/support/
+- Privacy Policy: https://brunobotelhobr.github.io/tcg-game-planner/privacy/
 
----
+## Editing the site
 
-## Overview
+Pages are fragments in `src/pages/`, wrapped in `src/layout.html` by `build.py` (Python 3, standard library only). The built site goes to `docs/`, which GitHub Pages serves (Settings › Pages › branch `main`, folder `/docs`).
 
-**TCG Game Planner** is designed for competitive and casual card players who want deep, data-driven mastery over their decks and tournaments:
+```bash
+python3 build.py
+```
 
-- 🃏 **Visual Deck Builder:** Manage your 60/100-card mainboard and sideboard with full card art, visual card stacks, mana curve charts, and real-time market value estimation.
-- ♟️ **Sideboard Matrix & Planning:** Prepare exact in/out card configurations against every opponent and metagame archetype for both on-the-play and on-the-draw.
-- 🏆 **Tournament & Matchup Analytics:** Track Swiss rounds, record game results, evaluate win rates by archetype, and identify deck performance trends over time.
-- 📦 **Physical Collection & Allocation:** Keep track of owned cards, editions, foils, and condition. Pin exact physical copies to specific decks with smart reservation math to prevent double-sleeving.
-- 🔍 **Scryfall Integration:** Fast, offline-first card lookups, printings, rulings, and automatic pricing updates powered by Scryfall.
-- 🔒 **100% Private & Offline-First:** No accounts, no sign-ups, no data tracking. Your database lives securely on your device with optional iCloud sync.
+Commit `src/` and `docs/` together. The design guide and the plan behind the site are in the app's own repository (`website.md`).
 
----
+## Release day
 
-## Support & Feedback
-
-Need help, have a suggestion, or encountered an issue?
-
-- **Submit a Bug or Request:** Open a ticket via [GitHub Issues](https://github.com/brunobotelhobr/tcg-game-planner/issues).
-- **Support Documentation:** Read our [Support Guide](SUPPORT.md) for FAQs and tips on backup management.
+In `build.py`, set `APP_STORE_URL` and `APP_STORE_ID`, rebuild, and every page switches from "Coming soon" to the store link and adds the Smart App Banner.
 
 ---
 
-## Privacy Policy
-
-We believe your deck strategies and collection data belong exclusively to you. Read our full [Privacy Policy](PRIVACY_POLICY.md).
-
-- No user accounts or personal profiles.
-- No third-party advertisements or tracking SDKs.
-- All game data is stored locally in a private SQLite database on your device.
-
----
-
-## Legal & Trademarks
-
-*TCG Game Planner is unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. Not approved or endorsed by Wizards of the Coast. Portions of the materials used are property of Wizards of the Coast LLC. © Wizards of the Coast LLC.*
+TCG Game Planner is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.

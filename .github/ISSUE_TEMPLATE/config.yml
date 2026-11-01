@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FAQ
+    url: https://brunobotelhobr.github.io/tcg-game-planner/faq/
+    about: Quick answers about prices, backups, decks and the collection.
+  - name: User guide
+    url: https://brunobotelhobr.github.io/tcg-game-planner/help/
+    about: How every part of the app works.

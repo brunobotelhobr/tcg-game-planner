@@ -1,0 +1,25 @@
+name: Suggest a feature
+description: An idea that would make the app better for you.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Check the [backlog](https://brunobotelhobr.github.io/tcg-game-planner/backlog/) and existing requests first; a thumbs-up on an existing one helps it move up.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem or the situation, not the solution yet.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you handle it today?

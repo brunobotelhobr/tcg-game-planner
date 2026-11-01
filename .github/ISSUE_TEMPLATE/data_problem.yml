@@ -1,0 +1,33 @@
+name: Wrong card data
+description: A price, edition, image, text or legality that looks wrong.
+labels: [data]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Card data comes from Scryfall. Try **Update** in the app first: it refreshes prices, editions, rulings and banlists.
+  - type: input
+    id: card
+    attributes:
+      label: Card
+      placeholder: Lightning Bolt
+    validations:
+      required: true
+  - type: input
+    id: edition
+    attributes:
+      label: Edition
+      placeholder: Alpha (LEA) 161
+  - type: dropdown
+    id: what
+    attributes:
+      label: What is wrong?
+      options: [Price, Edition missing or blank, Image, Text or mana cost, Legality or banlist, Something else]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What does the app show, and what should it be?
+    validations:
+      required: true

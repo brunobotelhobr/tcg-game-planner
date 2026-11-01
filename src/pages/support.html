@@ -1,0 +1,66 @@
+<!--
+title: Support
+description: Get help with TCG Game Planner: check the FAQ, then open a ticket on GitHub for a bug, a feature request, a question or wrong card data.
+path: support/
+nav: support
+-->
+<div class="wrap">
+  <header class="page-head prose">
+    <span class="eyebrow">Support</span>
+    <h1>Get help</h1>
+    <p class="lead">Most answers are already in the <a href="{{root}}faq/">FAQ</a> and the <a href="{{root}}help/">user guide</a>. If yours is not, open a ticket on GitHub and we will take it from there.</p>
+  </header>
+
+  <section>
+    <div class="grid quad">
+      <article class="card option">
+        <div class="icon-tile t-coral">{{icon:bug}}</div>
+        <h3>Report a bug</h3>
+        <p>Something does not work, looks wrong or lost data.</p>
+        <a class="btn primary" href="{{issues}}?template=bug_report.yml">Report a bug</a>
+      </article>
+      <article class="card option">
+        <div class="icon-tile t-gold">{{icon:bulb}}</div>
+        <h3>Suggest a feature</h3>
+        <p>An idea that would make the app better for you.</p>
+        <a class="btn" href="{{issues}}?template=feature_request.yml">Suggest a feature</a>
+      </article>
+      <article class="card option">
+        <div class="icon-tile t-violet">{{icon:question}}</div>
+        <h3>Ask a question</h3>
+        <p>How something works, when the guide does not say.</p>
+        <a class="btn" href="{{issues}}?template=question.yml">Ask a question</a>
+      </article>
+      <article class="card option">
+        <div class="icon-tile t-cyan">{{icon:database}}</div>
+        <h3>Wrong card data</h3>
+        <p>A price, edition, image, text or legality that looks wrong.</p>
+        <a class="btn" href="{{issues}}?template=data_problem.yml">Report card data</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="prose">
+    <div class="callout warn">
+      <strong>Tickets are public.</strong>
+      <p>Anyone can read what you post. Do not include your e-mail address, your backup files, API keys or service-account keys. Screenshots are welcome; crop out anything personal first.</p>
+    </div>
+
+    <h2>What to include</h2>
+    <ul>
+      <li>Your device (for example iPhone 15, iPad Air, MacBook Air M2) and its iOS, iPadOS or macOS version.</li>
+      <li>The app version, from Settings › About.</li>
+      <li>What you did, step by step; what you expected; what happened instead.</li>
+      <li>A screenshot or screen recording, if it shows the problem.</li>
+    </ul>
+
+    <h2>You will need a GitHub account</h2>
+    <p>Tickets live on <a href="{{repo}}/issues">GitHub Issues</a>. Opening one needs a free GitHub account. Reading existing tickets does not, so search there first: your question may already have an answer.</p>
+
+    <h2>What to expect</h2>
+    <p>TCG Game Planner is a free app made by one person. Replies are on a best-effort basis. Bugs that lose data come first, then bugs that block a feature, then everything else. When a fix ships, the ticket says in which version, and the <a href="{{root}}releases/">release notes</a> list it.</p>
+
+    <h2>Security issues</h2>
+    <p>Please do not report a security problem in a public ticket. Use <a href="{{repo}}/security/advisories/new">Report a vulnerability</a> on the repository, which only the developer can see.</p>
+  </section>
+</div>
