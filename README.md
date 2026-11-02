@@ -1,6 +1,6 @@
 # TCG Game Planner — website and support
 
-The public website and issue tracker for **TCG Game Planner**, a free app for Magic: The Gathering players on iPhone, iPad and Mac. The app is free but not open source: this repository holds the website only.
+The public website and issue tracker for **TCG Game Planner**, a free app for Magic: The Gathering players on iPhone, iPad and Mac. This repository holds the website and the issue tracker.
 
 - Website: https://brunobotelhobr.github.io/tcg-game-planner/
 - Get help or report a bug: https://brunobotelhobr.github.io/tcg-game-planner/support/
