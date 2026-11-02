@@ -81,7 +81,8 @@ code, kbd {
 }
 .skip:focus { top: 12px; }
 
-.wrap { max-width: calc(var(--wide) + 2 * var(--gutter)); margin: 0 auto; padding: 0 var(--gutter); }
+/* Side margins only: a vertical margin here would override the spacing between sections. */
+.wrap { max-width: calc(var(--wide) + 2 * var(--gutter)); margin-left: auto; margin-right: auto; padding: 0 var(--gutter); }
 .prose { max-width: var(--prose); }
 
 /* Header */
@@ -310,6 +311,7 @@ a.card:hover { text-decoration: none; border-color: color-mix(in srgb, var(--eme
 }
 @media (max-width: 480px) {
   :root { --gutter: 16px; }
+  section + section { margin-top: 56px; }
   body { font-size: 16px; }
   .band { padding: 24px; }
   .foot-grid { grid-template-columns: 1fr; }

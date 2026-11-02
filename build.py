@@ -17,11 +17,13 @@ and is wrapped in src/layout.html. In both, these placeholders are replaced:
     {{issues}}     its "new issue" URL (append ?template=… for a form)
     {{store}}      the App Store label: "Coming soon" until APP_STORE_URL is set
     {{icon:name}}  an inline SVG icon from ICONS
+    {{css_version}} a hash of site.css, so a changed stylesheet is never served from cache
 
 Standard library only. Run:  python3 build.py
 """
 
 import datetime
+import hashlib
 import re
 import shutil
 from pathlib import Path
@@ -116,6 +118,8 @@ def main():
         shutil.rmtree(OUT)
     shutil.copytree(SRC / "assets", OUT / "assets")
 
+    # A new stylesheet gets a new URL, so browsers never pair fresh pages with a cached old one.
+    css_version = hashlib.sha256((SRC / "assets" / "site.css").read_bytes()).hexdigest()[:10]
     urls = []
     for page in sorted((SRC / "pages").glob("*.html")):
         meta, body = parse(page.read_text(encoding="utf-8"))
@@ -136,7 +140,7 @@ def main():
         banner = (f'<meta name="apple-itunes-app" content="app-id={APP_STORE_ID}">\n' if APP_STORE_ID else "")
         values = {
             "root": root, "repo": REPO, "issues": f"{REPO}/issues/new", "store": store_label(root),
-            "base_url": BASE_URL, "year": str(datetime.date.today().year),
+            "base_url": BASE_URL, "year": str(datetime.date.today().year), "css_version": css_version,
         }
         content = fill(body, values)
         html = fill(layout, {**values, "title": title, "description": meta["description"], "canonical": canonical,
